@@ -1,0 +1,26 @@
+{
+  "name": "envio-email-exemplo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "email",
+    "nodemailer",
+    "express"
+  ],
+  "author": "Godoy",
+  "_proprietario": "GSG",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.19.2",
+    "nodemailer": "^7.0.5"
+  },
+  "description": "Exemplo simples de envio de e-mail com Node.js, Express e Nodemailer.",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

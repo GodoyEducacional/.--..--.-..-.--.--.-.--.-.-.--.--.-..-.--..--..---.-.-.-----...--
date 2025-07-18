@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>API Tarefas - Exemplo Simples</title>
+  </head>
+  <body>
+    <input id="descricao" placeholder="Descrição" />
+    <button onclick="adicionarTarefa()">Adicionar</button>
+    <button onclick="excluirTarefa()">Excluir (exemplo)</button>
+    <script>
+      const API = "http://localhost:3000/tarefas";
+
+      // Exemplo de inclusão (POST)
+      function adicionarTarefa() {
+        const descricao = document.getElementById("descricao").value;
+        fetch(API, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ descricao }),
+        });
+      }
+
+      // Exemplo de exclusão (DELETE) - coloque um id válido manualmente
+      function excluirTarefa() {
+        const id = prompt("Digite o ID da tarefa para excluir:");
+        fetch(API + "/" + id, { method: "DELETE" });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+# Dependências instaladas:
+
+# swagger-ui-express e swagger-jsdoc para gerar e exibir a documentação.
+
+# Arquivo de configuração Swagger criado:
+
+# src/swagger.js define as informações básicas da API e onde buscar os comentários de documentação.
+
+# Swagger integrado ao Express:
+
+# No src/app.js, foi adicionada a rota /api-docs para acessar a documentação interativa.
+
+# Exemplo de documentação adicionado:
+
+# No início de src/routes/usuario.routes.js, foi incluído um exemplo de comentário JSDoc para documentar o endpoint de listagem de usuários.
+
+# Como acessar a documentação
+
+# Inicie sua API normalmente.
+
+# Acesse http://localhost:3000/api-docs no navegador para visualizar e testar os endpoints via Swagger UI.
+
+# Se quiser documentar mais endpoints, basta adicionar comentários JSDoc semelhantes nos arquivos de rotas ou controllers, seguindo o padrão do exemplo.
+
+# Se quiser compartilhar com alguém
+
+# Basta subir seu projeto hospedagem e passar o link do /api-docs.
+
+# Quem acessar esse link verá a documentação interativa da sua API.

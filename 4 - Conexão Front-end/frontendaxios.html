@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exemplo Axios POST Simples</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <input id="descricao" placeholder="Descrição" />
+    <button onclick="adicionarTarefa()">Adicionar</button>
+    <div id="resposta"></div>
+    <script>
+      function adicionarTarefa() {
+        const descricao = document.getElementById("descricao").value;
+        axios
+          .post("http://localhost:3000/tarefas", { descricao })
+          .then((res) => {
+            document.getElementById("resposta").innerText =
+              "Tarefa criada: " + res.data.descricao;
+          });
+      }
+    </script>
+  </body>
+</html>

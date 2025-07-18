@@ -1,0 +1,26 @@
+## Rota privada com Token
+
+http://localhost:3000/user/{id} (substitua {id} pelo id do usuário)
+
+Authorization: Bearer <token_jwt_aqui>
+
+Token é obtido na rota de Login
+
+Exemplo de Usuário Não Encontrado: enviar o ID de um usuário que não existe:
+{
+"id": "60e8f8b6f63c0835b8d6f4b9"
+}
+
+Token Inválido:
+Enviar um token inválido ou ausente no cabeçalho Authorization, deve receber um erro de 401 Unauthorized. Aqui está um exemplo de como enviar o token no Insomnia:
+
+Authorization: Bearer <token_invalido>
+
+Exemplo de uma resposta de um usuario encontrado:
+{
+"user": {
+"\_id": "60e8f8b6f63c0835b8d6f4b9",
+"name": "Patrick",
+"email": "Patrick@email.com"
+}
+}
