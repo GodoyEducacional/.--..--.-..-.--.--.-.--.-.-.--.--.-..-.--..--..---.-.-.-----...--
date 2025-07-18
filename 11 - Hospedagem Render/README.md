@@ -62,7 +62,7 @@ Após o deploy, Render fornecerá uma URL pública para acessar sua API.
 
 ---
 
-## Dicas
+### Dicas
 
 - Sempre que fizer push para a branch configurada, o Render fará o deploy automaticamente.
 - Para logs, acesse a aba **Logs** no painel do Render.
